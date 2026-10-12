@@ -99,3 +99,35 @@ details a { color: var(--mint); }
 .card { min-width: 0; }
 .about-links a, .section > p a, details a { overflow-wrap: anywhere; }
 [id] { scroll-margin-top: 24px; }
+
+/* Roadmap 2.0: scoped to the homepage roadmap; shared preview rules are preserved. */
+#roadmap .roadmap-context { max-width: 76ch; margin-bottom: 28px; }
+#roadmap .roadmap-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+#roadmap .roadmap-card { min-width: 0; padding: 28px; background: var(--surface); border-radius: 12px; }
+#roadmap .roadmap-card > h3 { margin-top: 0; font-size: 1.35rem; line-height: 1.3; }
+#roadmap .roadmap-milestones { list-style: none; padding: 0; margin: 24px 0 0; }
+#roadmap .roadmap-milestones > li + li { border-top: 1px solid var(--mint); padding-top: 20px; margin-top: 20px; }
+#roadmap .roadmap-status { display: inline-block; max-width: 100%; padding: 3px 10px; border: 1px solid var(--mint); border-radius: 6px; color: var(--mint); font-size: .75rem; font-weight: 650; }
+#roadmap .roadmap-proposal { border-style: dashed; }
+#roadmap h4 { font-size: 1rem; line-height: 1.45; margin: 12px 0 8px; }
+#roadmap .roadmap-milestones p { font-size: .9rem; margin-bottom: 0; }
+#roadmap a { color: var(--mint); }
+#roadmap .roadmap-archive { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--surface); }
+#roadmap .roadmap-archive > h3 { margin-top: 0; }
+#roadmap .roadmap-archive > p { max-width: 80ch; }
+#roadmap .roadmap-disclosure { border: 1px solid var(--mint); border-radius: 12px; padding: 12px 20px; }
+#roadmap .roadmap-disclosure > summary { padding: 8px 0; }
+#roadmap .historical-roadmap { margin: 20px auto; width: 100%; max-width: 900px; }
+#roadmap .roadmap-transcription { max-width: 80ch; padding-bottom: 12px; }
+#roadmap .roadmap-transcription h5 { font-size: .95rem; margin: 20px 0 8px; }
+#roadmap .roadmap-transcription ul { padding-left: 24px; }
+#roadmap .roadmap-transcription li { margin-bottom: 4px; }
+#roadmap .roadmap-card, #roadmap .roadmap-disclosure { overflow-wrap: anywhere; }
+@media (max-width: 1100px) {
+  #roadmap .roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  #roadmap .roadmap-grid { grid-template-columns: 1fr; }
+  #roadmap .roadmap-card { padding: 22px; }
+  #roadmap .roadmap-disclosure { padding-inline: 16px; }
+}
