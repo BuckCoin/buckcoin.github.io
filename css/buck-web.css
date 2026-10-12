@@ -34,8 +34,9 @@ h3 { font-size: 1.5rem; letter-spacing: -.025em; margin-block: 18px 12px; }
 .text-link { padding-block: 12px; }
 .hero-panel { background: var(--surface); padding: 36px; border: 1px solid var(--mint); border-radius: 20px; }
 .hero-logo { display: block; width: 160px; max-width: 100%; height: auto; margin: 28px auto 0; object-fit: contain; }
-.panel-number { font-size: clamp(5rem, 10vw, 9rem); line-height: 1.2; color: var(--mint); font-weight: 250; letter-spacing: -.07em; margin-block: 24px; }
-.hero-panel > p:not(.eyebrow):not(.panel-number) { font-size: 1.4rem; }
+.panel-identity { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-block: 24px; }
+.panel-number { font-size: clamp(5rem, 7vw, 6rem); line-height: 1.2; color: var(--mint); font-weight: 250; letter-spacing: -.07em; margin: 0; }
+.panel-identity > p:not(.panel-number) { font-size: clamp(1rem, 1.55vw, 1.4rem); margin: 0; }
 .panel-note { border-top: 1px solid var(--mint); padding-top: 20px; font-size: .8rem; }
 .section { padding-block: 64px; border-top: 1px solid var(--surface); scroll-margin-top: 24px; }
 .section-heading { display: flex; justify-content: space-between; gap: 40px; align-items: end; margin-bottom: 32px; }
