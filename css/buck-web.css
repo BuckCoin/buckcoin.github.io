@@ -17,8 +17,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--mint); outline
 .skip-link:focus { top: 12px; }
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 32px; padding-block: 28px; }
 .brand { display: flex; align-items: center; gap: 16px; text-decoration: none; font-size: 1.8rem; font-weight: 750; letter-spacing: .08em; }
-.brand img { width: 72px; height: 72px; object-fit: contain; }
-.brand-caption { display: block; font-size: .65rem; font-weight: 400; letter-spacing: .1em; }
+.brand { white-space: nowrap; }
 nav ul { display: flex; flex-wrap: wrap; gap: 24px; padding: 0; margin: 0; list-style: none; }
 nav a { display: inline-block; padding-block: 10px; text-decoration: none; font-size: .9rem; }
 .hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; align-items: center; padding-block: 70px 100px; }
@@ -34,6 +33,7 @@ h3 { font-size: 1.5rem; letter-spacing: -.025em; margin-block: 18px 12px; }
 .button:hover { background: var(--white); color: var(--ink); }
 .text-link { padding-block: 12px; }
 .hero-panel { background: var(--surface); padding: 36px; border: 1px solid var(--mint); border-radius: 20px; }
+.hero-logo { display: block; width: 160px; max-width: 100%; height: auto; margin: 28px auto 0; object-fit: contain; }
 .panel-number { font-size: clamp(5rem, 10vw, 9rem); line-height: 1.2; color: var(--mint); font-weight: 250; letter-spacing: -.07em; margin-block: 24px; }
 .hero-panel > p:not(.eyebrow):not(.panel-number) { font-size: 1.4rem; }
 .panel-note { border-top: 1px solid var(--mint); padding-top: 20px; font-size: .8rem; }
@@ -44,6 +44,10 @@ h3 { font-size: 1.5rem; letter-spacing: -.025em; margin-block: 18px 12px; }
 .card { display: flex; flex-direction: column; background: var(--surface); border-radius: 12px; padding: 28px; }
 .card p { font-size: .95rem; }
 .card a { margin-top: auto; padding-top: 16px; color: var(--mint); }
+.about-grid { row-gap: 20px; }
+.about-links { margin: auto 0 0; padding: 0; list-style: none; }
+.about-links a { display: inline-block; }
+.about-history { margin-top: 28px; }
 .section-note { font-size: .8rem; margin-top: 20px; }
 .development-panel, .help-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
 .development-panel > div > p:not(.eyebrow), .help-panel > div > p:not(.eyebrow) { max-width: 460px; }
@@ -69,7 +73,7 @@ details a { color: var(--mint); }
 @media (max-width: 600px) {
   .container { width: calc(100% - 32px); }
   .preview-banner { padding-inline: 16px; }
-  .brand img { width: 56px; height: 56px; }
+  .hero-logo { width: clamp(112px, 32vw, 128px); }
   nav ul { gap: 8px 20px; }
   .hero, .card-grid, .development-panel, .help-panel { grid-template-columns: 1fr; }
   .hero { padding-top: 24px; }
@@ -83,3 +87,4 @@ details a { color: var(--mint); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
