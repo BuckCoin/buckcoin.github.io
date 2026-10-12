@@ -89,3 +89,13 @@ details a { color: var(--mint); }
   html { scroll-behavior: auto; }
 }
 
+
+/* Homepage resource additions; approved preview and hero rules remain unchanged. */
+.parameters { margin: 0 0 20px; }
+.parameters dt { color: var(--mint); font-size: .85rem; }
+.parameters dd { margin: 0 0 12px; }
+.historical-roadmap { display: block; max-width: 100%; height: auto; border-radius: 12px; }
+.legacy-embed { display: block; max-width: 100%; border: 0; margin-top: 16px; background: var(--surface); }
+.card { min-width: 0; }
+.about-links a, .section > p a, details a { overflow-wrap: anywhere; }
+[id] { scroll-margin-top: 24px; }
