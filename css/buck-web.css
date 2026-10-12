@@ -145,3 +145,7 @@ details a { color: var(--mint); }
 @media (max-width: 600px) {
   #historical-services .historical-disclosure { padding-inline: 16px; }
 }
+
+/* Homepage-only divider; header and content geometry are preserved. */
+.homepage-header-divider { position: relative; }
+.homepage-header-divider::after { content: ""; position: absolute; inset: auto 0 0; height: 1px; background: #263541; pointer-events: none; }
