@@ -131,3 +131,17 @@ details a { color: var(--mint); }
   #roadmap .roadmap-card { padding: 22px; }
   #roadmap .roadmap-disclosure { padding-inline: 16px; }
 }
+
+/* Historical services: native disclosures and links; no third-party embeds. */
+#historical-services .historical-service { min-width: 0; padding-block: 24px; border-top: 1px solid var(--surface); overflow-wrap: anywhere; }
+#historical-services .historical-service > h3 { margin-top: 0; }
+#historical-services .historical-service > p { max-width: 80ch; margin-bottom: 12px; }
+#historical-services .historical-disclosure { padding: 12px 20px; border: 1px solid var(--mint); border-radius: 12px; }
+#historical-services summary { min-height: 44px; }
+#historical-services summary:hover { color: var(--mint); }
+#historical-services .card-grid { margin-block: 20px 8px; }
+#historical-services h4 { font-size: 1.2rem; margin: 12px 0; }
+#historical-services .card a { display: inline-block; }
+@media (max-width: 600px) {
+  #historical-services .historical-disclosure { padding-inline: 16px; }
+}
