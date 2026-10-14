@@ -10,18 +10,24 @@
         <link href="../css/theme-green.css?v2.52" rel="stylesheet" type="text/css" media="all" />
         <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link rel="stylesheet" href="../css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="../img/favicon.ico.gif">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67801706-16"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-67801706-16');
-</script>
-    </head>
-    <body class="scroll-assist">
+    <style>
+/* Scoped to this legacy page; shared styles and the BUCK 2.0 homepage are unchanged. */
+.legacy-resource .legacy-notice { margin: 20px auto; padding: 16px 20px; max-width: 1024px; box-sizing: border-box; border-left: 4px solid #267343; background: #eef5ef; color: #292929; overflow-wrap: anywhere; }
+.legacy-resource .historical-url { display: block; padding: 6px 16px; line-height: 1.6; overflow-wrap: anywhere; }
+.legacy-resource .historical-url small { display: block; }
+.legacy-resource a:focus-visible, .legacy-resource button:focus-visible { outline: 2px solid #267343; outline-offset: 3px; }
+.legacy-resource .menu li:focus-within > ul, .legacy-resource .has-dropdown:focus-within .mega-menu ul { opacity: 1; visibility: visible; }
+.legacy-resource button.mobile-toggle { background: transparent; border-top: 0; border-bottom: 0; border-right: 0; border-radius: 0; margin: 0; color: inherit; }
+.legacy-resource section.pt0.pb64_2 > .container { overflow: hidden; }
+.legacy-resource .main-container { overflow-wrap: anywhere; }
+.legacy-resource .tg { width: 100%; table-layout: fixed; }
+.legacy-resource .tg th, .legacy-resource .tg td { overflow-wrap: anywhere; }
+
+</style>
+</head>
+    <body class="scroll-assist legacy-resource">
         <div class="nav-container">
             <a id="top"></a>
             <nav class="bg-light">
@@ -32,9 +38,9 @@
          <img class="logo logo-dark" alt="BUCK" src="../img/logo-light.png" />
          </a>
       </div>
-      <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-         <i class="ti-menu"></i>
-      </div>
+      <button type="button" class="module widget-handle mobile-toggle right visible-sm visible-xs" aria-label="Toggle navigation" aria-expanded="false">
+         <i class="ti-menu" aria-hidden="true"></i>
+      </button>
       <div class="module-group right">
          <div class="module left">
 <!-- Menu start -->
@@ -53,7 +59,7 @@
                      <a href="../index.html#roadmap">BUCK Dev Roadmap</a>
                   </li>                  
                   <li>
-                     <a href="../docs/buck_whitepaper.pdf" target="_blank">BUCK Whitepaper</a>
+                     <a href="../docs/buck_whitepaper.pdf" target="_blank" rel="noopener noreferrer">BUCK Whitepaper</a>
                   </li>                                    
                   <li>
                      <a href="../logos/logos.html">BUCK Logos!</a>
@@ -79,19 +85,19 @@
                               <span class="title">Wallets</span>
                            </li>
                            <li>
-                              <a href="../index.html#getstarted"><i class="ti-linux"></i> Apple Mac GUI</a>
+                              <a href="../index.html#getstarted"><i class="ti-linux" aria-hidden="true"></i> Apple Mac GUI</a>
                            </li>                                                                                 
                            <li>
-                              <a href="../index.html#getstarted"><i class="ti-linux"></i> Apple Mac CLI</a>
+                              <a href="../index.html#getstarted"><i class="ti-linux" aria-hidden="true"></i> Apple Mac CLI</a>
                            </li>                                                      
                            <li>
-                              <a href="../index.html#getstarted"><i class="ti-linux"></i> Linux CLI</a>
+                              <a href="../index.html#getstarted"><i class="ti-linux" aria-hidden="true"></i> Linux CLI</a>
                            </li>                           
                            <li>
-                              <a href="../index.html#getstarted"><i class="ti-linux"></i> Windows GUI</a>
+                              <a href="../index.html#getstarted"><i class="ti-linux" aria-hidden="true"></i> Windows GUI</a>
                            </li>                           
                            <li>
-                              <a href="#getstarted"><i class="ti-linux"></i> Windows CLI</a>
+                              <a href="../index.html#wallets"><i class="ti-linux" aria-hidden="true"></i> Windows CLI</a>
                            </li>                           
                         </ul>
                      </li>
@@ -127,28 +133,28 @@
                </a>
                <ul>
                   <li>
-                     <a href="http://altcoinminingpools.com/equihash/buck" target="_blank">Pool Market Share Chart</a> 
+                     <a href="http://altcoinminingpools.com/equihash/buck" target="_blank" rel="noopener noreferrer">Pool Market Share Chart</a> 
                   </li>               
                   <li>
-                     <a href="https://coorp.io" target="_blank">Coorp.io</a>
+                     <span class="historical-url">Coorp.io — https://coorp.io<small>Historical pool reference; current destination and operation are not verified. Not a recommendation.</small></span>
                   </li>                                
                   <li>
-                     <a href="https://equipool.1ds.us/getting_started" target="_blank">equipool.1ds.us</a>
+                     <a href="https://equipool.1ds.us/getting_started" target="_blank" rel="noopener noreferrer">equipool.1ds.us</a>
                   </li>
                   <li>
-                     <a href="https://fastblocks.net/" target="_blank">Fastblocks.net</a>
+                     <a href="https://fastblocks.net/" target="_blank" rel="noopener noreferrer">Fastblocks.net</a>
                   </li>                  
                   <li>
-                     <a href="http://klondikepool.net" target="_blank">Klondikepool.net</a>
+                     <a href="http://klondikepool.net" target="_blank" rel="noopener noreferrer">Klondikepool.net</a>
                   </li>                  
                   <li>
-                     <a href="http://pcmining.xyz:8080/getting_started" target="_blank">PCmining.xyz</a> 
+                     <a href="http://pcmining.xyz:8080/getting_started" target="_blank" rel="noopener noreferrer">PCmining.xyz</a> 
                   </li>                                    
                   <li>
-                     <a href="https://syspool.org" target="_blank">Syspool.org</a> 
+                     <a href="https://syspool.org" target="_blank" rel="noopener noreferrer">Syspool.org</a> 
                   </li>                                    
                   <li>
-                     <a href="http://pool.whibbit.cn/stats?coin=BUCK" target="_blank">pool.whibbit.cn</a> 
+                     <a href="http://pool.whibbit.cn/stats?coin=BUCK" target="_blank" rel="noopener noreferrer">pool.whibbit.cn</a> 
                   </li>                                                                                                                                                              
                </ul>
             </li>
@@ -161,13 +167,13 @@
                </a>
                <ul>
                   <li>
-                     <a href="https://bitcointalk.org/index.php?topic=2828707.20" target="_blank">Bitcoin Talk</a>
+                     <a href="https://bitcointalk.org/index.php?topic=2828707.20" target="_blank" rel="noopener noreferrer">Bitcoin Talk</a>
                   </li>
                   <li>
-                     <a href="https://discord.gg/G5KrsBz" target="_blank">Discord</a>
+                     <a href="https://discord.gg/G5KrsBz" target="_blank" rel="noopener noreferrer">Discord</a>
                   </li>
                  <li>
-                     <a href="https://twitter.com/BUCKcoin" target="_blank">Twitter</a>
+                     <a href="https://twitter.com/BUCKcoin" target="_blank" rel="noopener noreferrer">Twitter</a>
                   </li>
                </ul>
             </li>
@@ -178,16 +184,17 @@
 </nav>
         </div>
         <div class="main-container">
+<aside class="legacy-notice" aria-label="Historical context"><strong>Historical context.</strong> This page preserves the original BUCK resource material. Historical references, security claims, mining services, exchange links and wallet information may not describe current operation or independently verified safety. Zcash security reviews do not establish an independent audit of BUCK. Verify current project guidance and software provenance before use.</aside>
     <section class="image-slider slider-all-controls controls-inside parallax pt0 pb0 height-70">
 		        <ul class="slides">
                     <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="BUCK" class="background-image" src="../img/bgecl5.jpg">
+		                    <img alt="" class="background-image" src="../img/bgecl5.jpg">
 		                </div>
 		                <div class="container v-align-transform">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">   
-		                         <img alt="BUCK" src="../img/logo-coin-hr.png" class="image-large-2" style="max-width: 250px" />                             
+		                         <img alt="White circular BUCK logo with eye-in-triangle emblem" src="../img/logo-coin-hr.png" class="image-large-2" style="max-width: 250px" />                             
 		                         <div style="margin-top: 25px">
 		                         <h2 class="mb-xs-16">Crypto Evolved</h2>
                                 <p class="lead mb40">
@@ -201,12 +208,12 @@
 		            </li>
 		            <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="../img/bgecl2.jpg">
+		                    <img alt="" class="background-image" src="../img/bgecl2.jpg">
 		                </div>
 		                <div class="container v-align-transform">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">
-                                    <i class="ti-hummer icon"></i>
+                                    <i class="ti-hummer icon" aria-hidden="true"></i>
 		                            <h2 class="mb-xs-16"><br>Frictionless Transaction Platform</h2>
 		                            <p class="lead mb40">
 		                                BUCK: a 100% decentralized and open-source cryptocurrency.<br>No Founders tax. No centralized transaction taxes. Inspired by Bitcoin.
@@ -218,12 +225,12 @@
 		            </li>
                     <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="../img/bgecl3.jpg">
+		                    <img alt="" class="background-image" src="../img/bgecl3.jpg">
 		                </div>
 		                <div class="container v-align-transform">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">
-                                    <i class="ti-stats-up icon"></i>
+                                    <i class="ti-stats-up icon" aria-hidden="true"></i>
 		                            <h2 class="mb-xs-16"><br>Blazing Fast Speed</h2>
 		                            <p class="lead mb40">
 		                                Fast block time means blazing fast transaction speed.
@@ -235,12 +242,12 @@
 		            </li>
                     <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="BUCK" class="background-image" src="../img/bgecl4.jpg">
+		                    <img alt="" class="background-image" src="../img/bgecl4.jpg">
 		                </div>
 		                <div class="container v-align-transform">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">
-                                    <i class="ti-panel icon"></i>
+                                    <i class="ti-panel icon" aria-hidden="true"></i>
 		                            <h2 class="mb-xs-16"><br>Transactional Security</h2>
 		                            <p class="lead mb40">
 		                                BUCK utilizes ZeroCash technology zkSNARKs for perfect transactional security.
@@ -263,7 +270,7 @@
     <h4 class="uppercase mb30">Security Information</h4>
     </div>  
     <div class="col-md-12 col-sm-12">
-	BUCK will announce any breaking security issues on this website. BUCK is based on the Zcash codebase. For further information, see 	<a href="https://z.cash/support/security" target="_blank">https://z.cash/support/security</a>.
+	BUCK will announce any breaking security issues on this website. BUCK is based on the Zcash codebase. For further information, see 	<a href="https://z.cash/support/security" target="_blank" rel="noopener noreferrer">https://z.cash/support/security</a>.
 	<div style="height:30px">
 	</div>  
 	</div>  
@@ -273,7 +280,7 @@
     <h4 class="uppercase mb30">Security Audit</h4>
     </div>  	
 	<div class="col-md-12 col-sm-12">
-	BUCK is based on the Zcash codebase. Zcash has been subjected to formal third-party security reviews. See the <a href="https://z.cash/blog/audit-results" target="_blank">Zcash Audit Results</a> blog for further details on these reviews.
+	BUCK is based on the Zcash codebase. Zcash has been subjected to formal third-party security reviews. See the <a href="https://z.cash/blog/audit-results" target="_blank" rel="noopener noreferrer">Zcash Audit Results</a> blog for further details on these reviews.
 	<div style="height:30px">
 	</div>  
 	</div>  
@@ -314,22 +321,22 @@
                             <p class="lead mb40">
                                 Join the development community
                             </p>
-                            <a class="btn btn-filled btn-lg mb0" href="https://discord.gg/G5KrsBz" target="_blank">Participate</a>
+                            <a class="btn btn-filled btn-lg mb0" href="https://discord.gg/G5KrsBz" target="_blank" rel="noopener noreferrer">Participate</a>
                         </div>
                     </div>
                     <div class="embelish-icons">
-                        <i class="ti-marker"></i>
-                        <i class="ti-layout"></i>
-                        <i class="ti-ruler-alt-2"></i>
-                        <i class="ti-eye"></i>
-                        <i class="ti-signal"></i>
-                        <i class="ti-pulse"></i>
-                        <i class="ti-marker"></i>
-                        <i class="ti-layout"></i>
-                        <i class="ti-ruler-alt-2"></i>
-                        <i class="ti-eye"></i>
-                        <i class="ti-signal"></i>
-                        <i class="ti-pulse"></i>
+                        <i class="ti-marker" aria-hidden="true"></i>
+                        <i class="ti-layout" aria-hidden="true"></i>
+                        <i class="ti-ruler-alt-2" aria-hidden="true"></i>
+                        <i class="ti-eye" aria-hidden="true"></i>
+                        <i class="ti-signal" aria-hidden="true"></i>
+                        <i class="ti-pulse" aria-hidden="true"></i>
+                        <i class="ti-marker" aria-hidden="true"></i>
+                        <i class="ti-layout" aria-hidden="true"></i>
+                        <i class="ti-ruler-alt-2" aria-hidden="true"></i>
+                        <i class="ti-eye" aria-hidden="true"></i>
+                        <i class="ti-signal" aria-hidden="true"></i>
+                        <i class="ti-pulse" aria-hidden="true"></i>
                     </div>
                 </div>
             </section>
@@ -341,7 +348,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="widget">
-                                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+                                <p>Historical widget: Bitcoin price and market statistics (USD / BTC). Live data is not loaded automatically. <a href="https://coinmarketcap.com/currencies/bitcoin/">View CoinMarketCap Bitcoin information</a> (third-party destination).</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -372,23 +379,23 @@
                         <div class="col-sm-6 text-right">
                             <ul class="list-inline social-list">
                                 <li>
-                            <a href="https://github.com/buckcoin/buck" target="_blank">
-                                <i class="fa fa-github-alt fa-2x"></i>
+                            <a href="https://github.com/buckcoin/buck" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+                                <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>                        
                         <li>
-                            <a href="https://discord.gg/G5KrsBz" target="_blank">
-                                <i class="fa fa-comments fa-2x"></i>
+                            <a href="https://discord.gg/G5KrsBz" target="_blank" aria-label="Discord" rel="noopener noreferrer">
+                                <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://bitcointalk.org/index.php?topic=2828707.0" target="_blank">
-                                <i class="fa fa-comments fa-2x"></i>
+                            <a href="https://bitcointalk.org/index.php?topic=2828707.0" target="_blank" aria-label="Bitcoin Talk" rel="noopener noreferrer">
+                                <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>                        
                         <li>
-                            <a href="https://twitter.com/BUCKcoin" target="_blank">
-                                <i class="fa fa-twitter-square fa-2x"></i>
+                            <a href="https://twitter.com/BUCKcoin" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+                                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>
                             </ul>
@@ -402,7 +409,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 overflow-hidden">
-                        <i class="ti-announcement icon icon-sm pull-left color-primary"></i>
+                        <i class="ti-announcement icon icon-sm pull-left color-primary" aria-hidden="true"></i>
                         <p class="mb0 pull-left">
                             <strong>BUCK is a Zcash fork started from a new Genesis block</strong> | private, decentralized, blazing fast, open source. The Future of Cryptocurrency.</p>                        
                     </div>
@@ -417,5 +424,29 @@
         <script src="../js/smooth-scroll.min.js"></script>
         <script src="../js/parallax.js"></script>
         <script src="../js/scripts.js"></script>
+    <script>
+// Keep the inherited menu behavior while supporting keyboard operation.
+jQuery(function () {
+  document.querySelectorAll('.lightbox img').forEach(function (image) { image.setAttribute('alt', ''); });
+  var toggle = document.querySelector('.mobile-toggle');
+  toggle.addEventListener('click', function () {
+    toggle.setAttribute('aria-expanded', document.querySelector('.nav-bar').classList.contains('nav-open') ? 'true' : 'false');
+  });
+  document.querySelectorAll('.has-dropdown > a').forEach(function (link) {
+    link.addEventListener('keydown', function (event) {
+      if (event.key === ' ') { event.preventDefault(); link.parentElement.classList.toggle('toggle-sub'); }
+      if (event.key === 'Escape') { link.parentElement.classList.remove('toggle-sub'); link.blur(); }
+    });
+  });
+  document.querySelector('nav').addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      document.querySelectorAll('.toggle-sub').forEach(function (item) { item.classList.remove('toggle-sub'); });
+      document.querySelector('.nav-bar').classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
+});
+</script>
     </body>
 </html>
