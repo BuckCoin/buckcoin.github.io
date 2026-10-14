@@ -1,0 +1,17 @@
+/* BUCK-WEB-200 / 00I-6C-R3: full-bleed hero shell, enclosed network and stable content layout. */
+.buck-r5-hero-shell {position:relative; isolation:isolate; overflow:clip; border-bottom:1px solid #263541;}
+.buck-r5-preview-hero {position:relative;}
+.buck-r5-preview-hero > :not(.buck-r5-network) {position:relative;z-index:1;}
+.buck-r5-network {
+  position:absolute; inset:0; width:100%; height:100%;
+  pointer-events:none; z-index:0; overflow:hidden;
+}
+.buck-r5-network canvas {width:100%;height:100%;display:block;}
+.buck-r5-network::after {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,#0c1118 0%,rgba(12,17,24,.86) 23%,rgba(12,17,24,.24) 56%,rgba(12,17,24,.04) 100%);
+}
+@media(max-width:900px){
+  .buck-r5-network::after {background:linear-gradient(180deg,rgba(12,17,24,.7),rgba(12,17,24,.86));}
+}
+@media(prefers-reduced-motion:reduce){.buck-r5-network canvas{opacity:.65;}}
